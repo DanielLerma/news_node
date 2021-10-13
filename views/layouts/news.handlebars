@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <form id="searchForm">
+        <input type="text" placeholder=" Search...." name="q" id="q">
+        <button onclick="searchNews()" type="button">Go!</button>
+    </form>
+    <div class=" container">
+        <div class="grid">
+            {{{body}}}
+        </div>
+    </div>
+
+    <script>
+        function searchNews() {
+            let q = document.getElementById('q').value;
+            q.toLowerCase();
+            window.location = `/news?q=${q}`;
+        }
+    </script>
+</body>
+
+</html>

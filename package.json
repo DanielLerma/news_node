@@ -4,7 +4,8 @@
   "description": "news avec nodeJS",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=dev node .",
+    "dev": "cross-env NODE_ENV=dev nodemon ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/DanielLerma/news_node/issues"
   },
-  "homepage": "https://github.com/DanielLerma/news_node#readme"
+  "homepage": "https://github.com/DanielLerma/news_node#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
